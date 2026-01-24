@@ -1,0 +1,17 @@
+@use '../abstracts' as abs;
+
+.heading {
+  display: flex; 
+  align-items: center; 
+  color: abs.$text-color;
+
+  &::before {
+    content: '';
+    display: block; 
+    width: 5px;
+    height: 1em; 
+    background-color: abs.$text-color;
+    margin-right: 10px;
+    flex-shrink: 0; 
+  }
+}

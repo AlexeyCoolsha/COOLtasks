@@ -1,0 +1,8 @@
+@use '../abstracts' as abs;
+
+.main {
+  background-color: abs.$background-color;
+  min-height: 100vh;
+  border-left: abs.$border;
+  border-right: abs.$border
+}

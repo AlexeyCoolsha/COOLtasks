@@ -1,0 +1,15 @@
+@use '../abstracts';
+@use 'sass:map';
+
+.container {
+  width: 100%;
+  max-width: map.get(abstracts.$breakpoints-container, 'large');
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 52px;
+  padding-right: 52px;
+  min-height: 100%;
+  &__inner {
+    background-color: #0d1216;
+  }
+}

@@ -1,0 +1,51 @@
+@use '../abstracts/' as abs;
+@use 'sass:color';
+
+.btn {
+  display: flex;
+  align-items: center;
+  background: none;
+  padding: 20px;
+  border: abs.$border;
+  text-decoration: none;
+  user-select: none;
+  transition: 0.2s;
+  &:hover {
+    background-color: color.scale(#ffffff, $lightness: -10%);
+    color: color.scale(#000000, $lightness: 20%);
+  }
+  cursor: pointer;
+  color: #000000;
+  &__icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
+  &--primary {
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+    padding-left: 50px;
+    padding-right: 50px;
+    &:hover {
+      background-color: color.scale(#000000, $lightness: 10%);
+      color: #ffffff;
+    }
+  }
+  &--icon {
+    justify-content: center;
+    &__inner {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+  &--square {
+    height: 90px;
+    width: 100px;
+    justify-content: center;
+    &__icon {
+      margin: 0 auto;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@use '../abstracts/' as abs;
+
+.navigation {
+  display: flex;
+  .header & .btn {
+    border-left: none;
+    border-top: 0px;
+    border-bottom: 0px;
+    &:last-child {
+      border-right: none;
+    }
+    &:first-child {
+      border-left: abs.$border;
+    }
+  }
+}
