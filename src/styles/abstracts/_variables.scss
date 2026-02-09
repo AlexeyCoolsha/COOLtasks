@@ -1,6 +1,7 @@
 /// Regular font family
 /// @type List
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack:
+  'Space Grotesk', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 
 /// Code (monospace) font family
 /// @type List
@@ -10,26 +11,25 @@ $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
 /// Colors
 ///
 
-$text-color: #e19cbb !default;
+$transparent-color: rgba(0, 0, 0, 0) !default;
+$text-color: #000000 !default;
 $color-accent: #fe007f !default;
 $color-accent-secondary: #1fcecb !default;
 $background-color: #ffffff !default;
 $color-light-gray: #ebebeb !default;
 
-$color-yellow: #FFF685;
-$color-light-lilac: #CBB5FF;
+$color-yellow: #fff685;
+$color-light-lilac: #cbb5ff;
 
 $image-body-background: url('/src/assets/images/background.gif');
 
 $border: 5px solid #000000;
 
 $spacing-small: 12px !default;
-$spacing-medium: 24px !default;
+$spacing-medium: 30px !default;
 $spacing-large: 52px !default;
 
 $shadow-default: 0 4px 6px rgba(0, 0, 0, 0.1) !default;
-
-
 
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
@@ -41,8 +41,7 @@ $breakpoints: (
   // tablet screen
   'large': 1280px,
   // laptop screen
-  'extra-large': 1920px,
-  // desktop screen
+  'extra-large': 1920px, // desktop screen
 ) !default;
 
 $breakpoints-container: (
@@ -50,8 +49,7 @@ $breakpoints-container: (
   // mobile screen
   'medium': 736px,
   // tablet screen
-  'large': 1440px,
-  // laptop screen
+  'large': 1440px, // laptop screen
 ) !default;
 
 /// Relative or absolute URL where all assets are served from

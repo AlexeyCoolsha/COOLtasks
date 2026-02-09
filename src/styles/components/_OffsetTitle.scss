@@ -1,0 +1,25 @@
+@use '../abstracts/' as abs;
+
+.offset-title {
+  position: relative;
+  left: 0;
+  z-index: 1;
+  &__accent {
+    font-size: 196px;
+    text-transform: uppercase;
+  }
+  &__main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  &__substrate {
+    position: absolute;
+    top: 6px;
+    left: 9px;
+    z-index: 1;
+    color: abs.$transparent-color;
+    -webkit-text-stroke: 2px abs.$text-color;
+  }
+}
