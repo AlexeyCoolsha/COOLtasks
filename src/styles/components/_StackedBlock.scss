@@ -1,0 +1,71 @@
+@use '../abstracts/' as abs;
+
+.stacked-block {
+  display: inline-block;
+  position: relative;
+  margin-top: abs.$stacked-block-pos-tertiary-y * -1 + abs.$spacing-medium;
+  margin-left: abs.$stacked-block-pos-tertiary-x * -1 + abs.$spacing-medium;
+  letter-spacing: 0.015em;
+  &__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: abs.$border;
+    &--primary {
+      position: relative;
+      z-index: 3;
+      background-color: abs.$stacked-block-color-primary;
+      padding: abs.$spacing-medium abs.$spacing-large;
+      min-width: 150px;
+      min-height: 150px;
+    }
+    &--secondary {
+      transform: translate(abs.$stacked-block-pos-secondary-x, abs.$stacked-block-pos-secondary-y);
+      z-index: 2;
+      background-color: abs.$stacked-block-color-secondary;
+      width: 100%;
+      height: 100%;
+    }
+    &--tertiary {
+      transform: translate(abs.$stacked-block-pos-tertiary-x, abs.$stacked-block-pos-tertiary-y);
+      z-index: 1;
+      background-color: abs.$stacked-block-color-tertiary;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 443px;
+  }
+  &__title {
+    font-size: 35px;
+    line-height: 150%;
+    letter-spacing: 0.015em;
+  }
+  &__text {
+    font-weight: 700;
+    font-size: 23px;
+    text-align: justify;
+    line-height: 150%;
+    letter-spacing: 0.015em;
+  }
+  &::before {
+    display: block;
+    position: absolute;
+    z-index: 4;
+    bottom: -36px;
+    left: -81px;
+    content: url(/src/assets/images/StacedBlockStars.svg);
+  }
+  &::after {
+    display: block;
+    position: absolute;
+    z-index: 4;
+    top: -24px;
+    right: -56px;
+    content: url(/src/assets/images/StacedBlockStar.svg);
+  }
+}

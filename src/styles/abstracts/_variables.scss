@@ -3,35 +3,57 @@
 $text-font-stack:
   'Space Grotesk', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 
-$text-font-stack-secondary: 'Syne', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack-secondary:
+  'Syne', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 
 /// Code (monospace) font family
 /// @type List
 $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
 
-///
+
 /// Colors
-///
 
 $transparent-color: rgba(0, 0, 0, 0) !default;
 $text-color: #000000 !default;
-$text-color-secondary: #FFF685 !default;
+$text-color-secondary: #fff685 !default;
 $color-accent: #fe007f !default;
 $color-accent-secondary: #1fcecb !default;
 $background-color: #ffffff !default;
 $color-light-gray: #ebebeb !default;
+$color-yellow: #FFF685 !default;
+$color-bright-lilac: #cbb5ff !default;
 
-$color-yellow: #fff685;
-$color-light-lilac: #cbb5ff;
+// Stacked block
+
+$stacked-block-color-primary: #ffffff !default;
+$stacked-block-color-secondary: #6495ff !default;
+$stacked-block-color-tertiary: #ffd9c0 !default;
+
+$stacked-block-pos-secondary-y: -26px !default;
+$stacked-block-pos-secondary-x: -21px !default;
+$stacked-block-pos-tertiary-y: $stacked-block-pos-secondary-y * 2 !default;
+$stacked-block-pos-tertiary-x: $stacked-block-pos-secondary-x * 2 !default;
+
+// Hero Blocks
+
+$right-hero-block: $color-yellow;
+$left-hero-block: $color-bright-lilac;
+
+// Body Background Image
 
 $image-body-background: url('/src/assets/images/background.gif');
 
+// Borders
+
 $border: 5px solid #000000;
 
-$spacing-small: 12px !default;
-$spacing-medium: 30px !default;
+//Spacings
+
+$spacing-small: 18px !default;
+$spacing-medium: 36px !default;
 $spacing-large: 52px !default;
 
+// Shadows
 $shadow-default: 0 4px 6px rgba(0, 0, 0, 0.1) !default;
 
 /// Breakpoints map

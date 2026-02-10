@@ -41,11 +41,10 @@
     }
   }
   &--square {
+    padding-left: 25px;
+    padding-right: 25px;
     height: 100%;
-    max-width: 100px;
+    // max-width: 100px;
     justify-content: center;
-    &__icon {
-      margin: 0 auto;
-    }
   }
 }
