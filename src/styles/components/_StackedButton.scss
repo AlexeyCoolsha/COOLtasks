@@ -4,6 +4,7 @@
 .stacked-button {
   display: inline-block;
   position: relative;
+  z-index: 3;
 
   &--absolute {
     position: absolute;
@@ -50,7 +51,7 @@
       transform: translate(9px, 7px);
     }
     & .stacked-button__icon {
-      animation: icon-bump 0.3s ease-out 1;
+      animation: icon-bump 0.2s ease-out 1;
     }
   }
   &:active {

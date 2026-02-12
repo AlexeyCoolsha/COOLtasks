@@ -1,0 +1,50 @@
+@use '../abstracts/' as abs;
+
+.hero-image {
+  position: relative;
+  width: 100%;
+  max-width: 584px;
+
+  &__image {
+    position: relative;
+    z-index: 1;
+    left: 10px;
+    top: 61px;
+    transform: rotate(-161deg);
+    height: auto;
+    cursor: help;
+    user-select: none;
+    animation: hero-image-return 0.5s ease-out forwards;
+    will-change: transform;
+  }
+  .hero-image__decoration {
+    position: absolute;
+    z-index: 2;
+    &--top {
+      top: 42px;
+      left: 30px;
+    }
+    &--bottom {
+      bottom: -110px;
+      right: 0;
+    }
+  }
+  &__hover-detector {
+    display: block;
+    width: 500px;
+    height: 600px;
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: help;
+    &:hover {
+      ~ .hero-image__image {
+        animation:
+          hero-image-rotation 0.5s ease-out forwards,
+          hero-image-floating 3s ease-in-out 0.8s infinite alternate;
+      }
+    }
+  }
+}

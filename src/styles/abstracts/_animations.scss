@@ -12,3 +12,36 @@
     transform: translate(0px, 0px);
   }
 }
+
+@keyframes hero-image-rotation {
+  0% {
+    transform: rotate(-161deg);
+  }
+  40% {
+    transform: rotate(-370deg);
+  }
+  100% {
+    transform: rotate(-341deg);
+  }
+}
+
+@keyframes hero-image-return {
+  0% {
+    transform: rotate(-341deg);
+  }
+  40% {
+    transform: rotate(-141deg);
+  }
+  100% {
+    transform: rotate(-161deg);
+  }
+}
+
+@keyframes hero-image-floating {
+  0% {
+    transform: rotate(-341deg) translate(0px, 0px);
+  }
+  100% {
+    transform: rotate(-370deg) translate(-20px, -35px);
+  }
+}
