@@ -1,13 +1,15 @@
 @use '../abstracts/' as abs;
 
 .block {
-  &--hero {
+  border-bottom: abs.$border;
+  width: 100%;
+  &--inner {
+    border-bottom: none;
+  }
+  &-hero {
     display: flex;
-    width: 100%;
     max-height: 926px;
     height: 100vh;
-    border-bottom: abs.$border;
-    margin-bottom: abs.$spacing-large;
     &__description {
       font-size: 26px;
       line-height: 150%;
@@ -18,7 +20,7 @@
       top: 53px;
       left: -6px;
     }
-    &-left {
+    &--left {
       position: relative;
       background-color: abs.$left-hero-block;
       width: 100%;
@@ -27,7 +29,7 @@
       padding: abs.$spacing-large abs.$spacing-large abs.$spacing-large abs.$spacing-medium;
       border-right: abs.$border;
     }
-    &-right {
+    &--right {
       width: 100%;
       max-width: 586px;
       height: 100%;

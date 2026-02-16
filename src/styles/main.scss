@@ -18,18 +18,20 @@
 @use 'layout/main';
 @use 'layout/navigation';
 @use 'layout/wrapper';
+@use 'layout/block';
 
 // 4. Components
 @use 'components/button';
 @use 'components/heading';
 @use 'components/LogoBox';
-@use 'components/block';
 @use 'components/title';
 @use 'components/OffsetTitle';
 @use 'components/label';
 @use 'components/StackedBlock';
 @use 'components/StackedButton';
 @use 'components/HeroImage';
+@use 'components/SectionHeader';
+// @use 'components/LayeredHeading';
 
 // 5. Pages
 @use 'pages/home';
