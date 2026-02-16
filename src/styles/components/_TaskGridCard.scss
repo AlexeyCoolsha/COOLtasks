@@ -1,0 +1,36 @@
+@use '../abstracts/' as abs;
+
+.task-grid__card {
+  background-color: abs.$color-light-gray;
+  border: abs.$border;
+  margin-left: -5px;
+  //   height: 200px;
+  //   border-radius: 8px;
+  &:first-child {
+    border-left: none;
+    margin: 0;
+    background-color: abs.$color-info-card;
+  }
+  &:nth-child(2) {
+    background-color: abs.$color-interactive-card-first;
+  }
+  &:nth-child(3) {
+    background-color: abs.$color-interactive-card-second;
+  }
+  &:last-child {
+    border-right: none;
+    background-color: abs.$color-interactive-card-third;
+  }
+  &--info {
+    // background-color: abs.$color-info-card;
+  }
+  &--interactive {
+    // background-color: abs.$color-interactive-card;
+    cursor: pointer;
+    transition: 0.3s ease;
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: abs.$shadow-default;
+    }
+  }
+}

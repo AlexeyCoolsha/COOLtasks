@@ -3,7 +3,8 @@
 .hero-image {
   position: relative;
   width: 100%;
-  max-width: 584px;
+  max-width: 584px; 
+  height: 100%;
 
   &__image {
     position: relative;
@@ -25,14 +26,14 @@
       left: 30px;
     }
     &--bottom {
-      bottom: -110px;
+      bottom: 0;
       right: 0;
     }
   }
   &__hover-detector {
     display: block;
-    width: 500px;
-    height: 600px;
+    width: 90%;
+    height: 70%;
     position: absolute;
     z-index: 4;
     top: 50%;
@@ -48,3 +49,26 @@
     }
   }
 }
+
+// @media screen and (max-width: 1440px) {
+//   .hero-image {
+//     // &__image {
+//     //   left: 0;
+//     //   top: 50px;
+//     // }
+//     // .hero-image__decoration {
+//     //   &--top {
+//     //     top: 30px;
+//     //     left: 20px;
+//     //   }
+//     //   &--bottom {
+//     //     bottom: -100px;
+//     //     right: -20px;
+//     //   }
+//     // }
+//     &__hover-detector {
+//       width: 400px;
+//       height: 500px;
+//     }
+//   }
+// }

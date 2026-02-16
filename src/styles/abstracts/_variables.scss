@@ -19,11 +19,21 @@ $color-accent: #fe007f !default;
 $color-accent-secondary: #1fcecb !default;
 $background-color: #ffffff !default;
 
-$color-light-gray: #D9D9D9 !default;
+$color-light-gray: #d9d9d9 !default;
 $color-yellow: #fff685 !default;
 $color-bright-lilac: #cbb5ff !default;
-$color-orange: #FF704D !default;
-$color-juicy-orange: #FF6500;
+$color-orange: #ff704d !default;
+$color-juicy-orange: #ff6500;
+$color-light-blue: #72AEE6 !default;
+$color-light-brown: #BF9DA0 !default;
+$color-dusty-coral: #DA8583 !default;
+
+// Task Grid Cards
+$color-info-card: $color-light-blue !default;
+$color-interactive-card-first: $color-orange !default;  
+$color-interactive-card-second: $color-light-brown !default;
+$color-interactive-card-third: $color-dusty-coral !default;
+
 
 // Stacked block
 
@@ -57,7 +67,7 @@ $spacing-medium: 36px !default;
 $spacing-large: 52px !default;
 
 // Shadows
-$shadow-default: 0 4px 6px rgba(0, 0, 0, 0.1) !default;
+$shadow-default: 0 10px 20px rgba(0, 0, 0, 0.5);
 
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length

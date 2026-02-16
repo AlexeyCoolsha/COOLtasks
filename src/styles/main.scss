@@ -19,6 +19,7 @@
 @use 'layout/navigation';
 @use 'layout/wrapper';
 @use 'layout/block';
+@use 'layout/TasksGrid';
 
 // 4. Components
 @use 'components/button';
@@ -32,6 +33,7 @@
 @use 'components/HeroImage';
 @use 'components/SectionHeader';
 @use 'components/LayeredHeading';
+@use 'components/TaskGridCard';
 
 // 5. Pages
 @use 'pages/home';
