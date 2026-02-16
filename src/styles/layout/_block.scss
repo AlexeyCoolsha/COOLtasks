@@ -2,12 +2,9 @@
 
 .block {
   border-bottom: abs.$border;
-  width: 100%;
-  &--inner {
-    border-bottom: none;
-  }
   &-hero {
     display: flex;
+    width: 100%;
     max-height: 926px;
     height: 100vh;
     &__description {
