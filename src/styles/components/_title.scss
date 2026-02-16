@@ -1,12 +1,16 @@
 @use '../abstracts/' as abs;
 
 .title {
-  font-size: 150px;
+  // font-size: 150px;
   font-weight: 700;
   color: abs.$text-color;
   line-height: 120%;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.06em;
   &--hero {
     font-size: 137px;
+  }
+  &--tasks {
+    font-size: 246px;
+    text-transform: uppercase;
   }
 }

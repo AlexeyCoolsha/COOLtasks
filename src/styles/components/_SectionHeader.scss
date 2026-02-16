@@ -1,5 +1,11 @@
 @use '../abstracts/' as abs;
 
 .section-header {
+  box-sizing: border-box;
   background-color: abs.$color-light-gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 47px 55px;
+  height: 256px;
 }
